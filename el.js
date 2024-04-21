@@ -9,9 +9,7 @@ const { state, saveState } = useSingleFileAuthState("./login.json");
 
 //Bagian koding chat GPT
 const { Configuration, OpenAIApi } = require("openai");
-const configuration = new Configuration({
-  // apiKey: "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",
-});
+const configuration = new Configuration({});
 const openai = new OpenAIApi(configuration);
 
 //fungsi OpenAI chatgpt untuk mendapatkan respon
